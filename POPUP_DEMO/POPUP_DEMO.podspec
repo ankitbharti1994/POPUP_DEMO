@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT (example)"
+   s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,7 +52,7 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "ankit" => "ankit.bharti@adeptpros.com" }
+  s.author             = { "ankit" => "ankitbharti1994@gmail.com" }
   # Or just: s.author    = "ankit"
   # s.authors            = { "ankit" => "ankit.bharti@adeptpros.com" }
   # s.social_media_url   = "http://twitter.com/ankit"
