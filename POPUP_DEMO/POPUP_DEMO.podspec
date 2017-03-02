@@ -16,15 +16,16 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "POPUP_DEMO"
-  s.version      = "1.0.0"
-  s.summary      = "POPUP_DEMO is for present the pop up on the screen"
+  s.version      = "0.1.0"
+  s.summary      = ""
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "POPUP_DEMO is for present the pop up on the screen"
+  s.description  = <<-DESC
+                   DESC
 
   s.homepage     = "https://github.com/ankitbharti1994/POPUP_DEMO"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -37,8 +38,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-   s.license      = "MIT"
-  #s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = "MIT (example)"
+  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -51,10 +52,10 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "ankit" => "ankitbharti1994@gmail.com" }
-  # Or just: s.author    = "ankit"
-  # s.authors            = { "ankit" => "ankit.bharti@adeptpros.com" }
-  # s.social_media_url   = "http://twitter.com/ankit"
+  s.author             = { "ankit bharti" => "ankitbharti1994@gmail.com" }
+  # Or just: s.author    = "ankit bharti"
+  # s.authors            = { "ankit bharti" => "ankitbharti1994@gmail.com" }
+  # s.social_media_url   = "http://twitter.com/ankit bharti"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -63,10 +64,10 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-   s.platform     = :ios, "9.0"
+  # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "9.0"
+  # s.ios.deployment_target = "5.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -78,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-     s.source       = { :path => '.' }
+  s.source       = { :git => "https://github.com/ankitbharti1994/POPUP_DEMO.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,10 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-     s.source_files  = "POPUP_DEMO", "POPUP_DEM0/**/*.{h,m}"
-  #  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.exclude_files = "Classes/Exclude"
 
-     s.public_header_files = "POPUP_DEMO/**/*.h"
+  # s.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -128,9 +129,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-    s.requires_arc = true
+  # s.requires_arc = true
 
-    s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    s.dependency "SDWebImage"
+  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
+  # s.dependency "JSONKit", "~> 1.4"
 
 end
