@@ -4,7 +4,7 @@ Pod::Spec.new do |spec|
 spec.name         = "POPUP_DEMO"
 
 #version
-spec.version      = "1.0.0"
+spec.version      = "1.0.1"
 
 #summary
 spec.summary      = "Simple POP UP presentation"
@@ -22,11 +22,12 @@ spec.license          = { :type => "MIT", :file => "LICENSE" }
 spec.authors          = { "ankit bharti" => "ankitbharti1994@gmail.com" }
 
 spec.social_media_url = 'https://twitter.com/Ankit_bharti94'
-spec.platform     = :ios, "6.0"
+spec.platform     = :ios, "9.0"
 
 #source and source file
-spec.source       = { :git => "https://github.com/ankitbharti1994/POPUP_DEMO.git", :tag => "1.0.0" }
+spec.source       = { :git => "https://github.com/ankitbharti1994/POPUP_DEMO.git", :tag => "1.0.1" }
 spec.source_files  = "POPUP_DEMO/**/*.{h,m}"
+spec.resources = "POPUP_DEMO/**/*.{png,jpeg,jpg,xib}"
 
 #deployment target
 spec.ios.deployment_target  = '9.0'
